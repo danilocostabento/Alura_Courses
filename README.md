@@ -1,7 +1,7 @@
 ## First things first
 
 This repo was make for the study of the Alura Courses, we gonna use the itens bellow:<br />
-[![Stacks in the repo](https://skillicons.dev/icons?i=html,css,js,sass,bootstrap,ts)](https://skillicons.dev)
+[![Stacks in the repo](https://skillicons.dev/icons?i=html,css,js,sass,bootstrap,ts,vscode)](https://skillicons.dev)
 
 In this repo, we have to set up the Visual Studio Code, the Visual Studio Code is an Microsoft Code Editor, or an IDE (Interface of Development Environment), in this IDE, you can do anything you want in the development, as: <br />
 - Edit some code with support of a lot of programming languages;<br />
@@ -39,12 +39,12 @@ Whoever has never resolved a merge conflict incorrectly, let him cast the first 
 Take a look at this image and I invite you to test it with any conflict that you may be resolving now (or later).
 
 ### Supports in the VS Code
-- <a href="https://docs.flutter.dev/tools/vs-code">Flutter </a>
-- <a href="https://code.visualstudio.com/docs/languages/javascript">JavaCript/TypeScript </a>
-- <a href="https://code.visualstudio.com/docs/languages/java">Java</a>
-- <a href="https://code.visualstudio.com/docs/languages/go">Go</a>
-- <a href="https://code.visualstudio.com/docs/languages/python">Python</a>
-- <a href="https://marketplace.visualstudio.com/items?itemName=betterthantomorrow.calva">Clojure</a>
+- [Flutter](https://docs.flutter.dev/tools/vs-code)
+- [JavaScript/TypeScript](https://code.visualstudio.com/docs/languages/javascript)
+- [Java](https://code.visualstudio.com/docs/languages/java)
+- [Go](https://code.visualstudio.com/docs/languages/go)
+- [Python](https://code.visualstudio.com/docs/languages/python)
+- [Clojure](https://marketplace.visualstudio.com/items?itemName=betterthantomorrow.calva)
 
 ### Some extensions for VS Code
 - [Quit Control](https://marketplace.visualstudio.com/items?itemName=artdiniz.quitcontrol-vscode) Is obligatory if you doesn't want to lose all the things if you use the _Ctrl + Q_ in the VS Code.
