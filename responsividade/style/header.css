@@ -1,0 +1,66 @@
+.header {
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .container {
+        display: flex;
+        align-items: center;
+        
+        .hamburg {
+            width: 24px;
+            height: 24px;
+            background: url('../assets/Menu.svg') no-repeat center center;
+            display: inline-block;
+        }
+        .icon {
+            padding: 1em;
+        }
+    
+        .list {
+            display: none;
+            position: absolute;
+            top: 100%;
+            width: 70vw;
+    
+            .title, .item {
+                padding: 1em;
+                background: var(--white);
+            }
+    
+            .title {
+                color: var(--orange);
+                font-weight: 700;
+            }
+    
+            .link {
+                background: var(--gradient-blue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+
+        .btn {
+            display: none;
+        }
+
+        .btn:checked~.list {
+            display: block;
+        }
+    }
+
+    .btn:checked ~ label {
+        background: var(--gradient-blue);
+
+        .hamburg {
+            background: url('../assets/Menu\ Aberto.svg') no-repeat center center;
+            transition: background 500ms;
+        }
+    }
+}
+
