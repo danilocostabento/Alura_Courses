@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho .container {
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    .newsletter__campo {
+        width: 90%;
+    }
+
+    .carrossel__container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .rodape__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape__redes {
+        display: flex;
+        justify-content: center;
+    }
+}
+

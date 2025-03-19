@@ -15,8 +15,21 @@
             background: url('../assets/Menu.svg') no-repeat center center;
             display: inline-block;
         }
+
         .icon {
             padding: 1em;
+        }
+        .link-icon {
+            .icon {
+                padding: 1em;
+            }
+            .icon-text {
+                display: none;
+            }
+        }
+
+        .title {
+            display: none;
         }
     
         .list {
@@ -25,12 +38,12 @@
             top: 100%;
             width: 70vw;
     
-            .title, .item {
+            .hamburg--title, .item {
                 padding: 1em;
                 background: var(--white);
             }
     
-            .title {
+            .hamburg--title {
                 color: var(--orange);
                 font-weight: 700;
             }
@@ -54,6 +67,10 @@
         }
     }
 
+    .options {
+        display: none;
+    }
+
     .btn:checked ~ label {
         background: var(--gradient-blue);
 
@@ -64,3 +81,122 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .header {
+        .container {
+
+            .logo {
+                padding: 0 0 0 5em;
+            }
+
+            .title,
+            .title--strong {
+                font-family: var(--logo-font);
+                font-size: 1.875rem;
+            }
+
+            .link-icon {
+                .icon {
+                    padding: 1em 3em 1em 1em;
+                }
+            }
+    
+            .title {
+                font-weight: 400;
+                display: block;
+                padding: .5em 0 0 .25em;
+            }
+    
+            .title--strong {
+                font-weight: 700;
+            }
+
+            .transparent {
+                display: none;
+            }
+        }
+
+        .options {
+            display: flex;
+    
+            .item {
+                padding: 1em 1em;
+                text-transform: uppercase;
+    
+                .link {
+                    text-decoration: none;
+                    color: var(--black);
+                }
+            }
+
+            .list {
+                display: none;
+                position: absolute;
+                top: 100%;
+                width: 70vw;
+        
+                .hamburg--title, .item {
+                    padding: 1em;
+                    background: var(--white);
+                }
+        
+                .hamburg--title {
+                    color: var(--orange);
+                    font-weight: 700;
+                }
+        
+                .link {
+                    background: var(--gradient-blue);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+            }
+
+            .btn {
+                display: none;
+            }
+
+            .list {
+                display: none;
+            }
+    
+            .btn:checked~.list {
+                display: block;
+                width: auto;
+            }
+
+            .btn:checked ~ label {
+                background: var(--gradient-blue);
+                color: var(--white);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .header {
+        .container {
+            margin: .5em 2em;
+            .link-icon {
+                text-decoration: none;
+                color: var(--black);
+                display: flex;
+                align-items: center;
+                .icon {
+                    padding: 1em;
+                }
+                .icon-text {
+                    display: block;
+                }
+            }
+        }
+
+        .options {
+            margin-right: auto;
+        }
+    }
+}
